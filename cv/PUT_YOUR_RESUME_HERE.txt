@@ -1,0 +1,8 @@
+Put your resume PDF here, named exactly:
+
+    RachelBakerRamos_UXDesigner_Resume.pdf
+
+You can download your current one from:
+https://www.rachelbakerdesigner.com/s/RachelBakerRamos_UXDesigner_Resume.pdf
+
+Once the real PDF is in this folder, you can delete this text file.

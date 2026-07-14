@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IODA | Rachel Baker-Ramos</title>
+<meta name="description" content="Internet Outage Detection and Analysis dashboard redesign.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="cat-projects">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="../index.html">Rachel Baker-Ramos</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#research">Research</a>
+      <a href="../index.html#illustration">Illustration</a>
+      <a href="https://www.rachelbakerdesigner.com/blog" target="_blank" rel="noopener">Thoughts</a>
+      <a href="../cv/RachelBakerRamos_UXDesigner_Resume.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="https://www.linkedin.com/in/rachel-baker-ramos/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="case-header">
+  <a class="case-back" href="../index.html#projects">&larr; Back to all work</a>
+  <p class="case-meta">Jan 2023 &ndash; Present · UX Designer</p>
+  <h1 class="case-title">IODA</h1>
+  <p class="case-subtitle">Internet Outage Detection and Analysis</p>
+</div>
+
+<div class="case-layout case-layout--resources">
+  <nav class="case-toc" aria-label="Section navigation">
+    <a class="toc-chip" href="#user-research">User Research</a>
+    <a class="toc-chip" href="#redesign">(Re)design</a>
+    <a class="toc-chip" href="#user-testing-and-findings">User Testing and Findings</a>
+    <a class="toc-chip" href="#next-steps">Next Steps</a>
+  </nav>
+  <div class="case-body">
+
+<p>IODA is a dashboard that provides real-time detection and analysis of internet outages, offering valuable insights into the stability and performance of internet connectivity across the globe. The project, run by the Internet Intelligence Research Lab at Georgia Tech, combines multiple data sources and automated analysis to identify outage events and generate relevant alerts. These outage events and corresponding signals are displayed on interactive graphs, enabling users to gain near-real-time insights into internet outages. Our users include journalists, activists, and connectivity experts.</p>
+
+<h2 id="user-research">User Research</h2>
+<p>During the user research phase, we analyzed user surveys and interviews, conducted a competitive analysis, examined Twitter analytics and an existing heuristic evaluation to gain further insights.</p>
+<p>As a UX Designer on this project, I focused on the redesign of the Internet Connectivity view, as well as a new edit and share feature. For these features, our research revealed valuable insights, including users' desire for a more easily interpretable signal chart, free from visual noise. They also emphasized the importance of historical averages of signals and on-screen guidance, such as tooltips, to aid in understanding the data presented.</p>
+<div class="img-grid img-grid-3">
+  <img src="../images/work/ioda/Slide 51.png" alt="User Survey">
+  <img src="../images/work/ioda/Slide 31.png" alt="Heuristic Evaluation">
+  <img src="../images/work/ioda/Slide 46.png" alt="Interview Findings: Usage Motivation">
+  <img src="../images/work/ioda/Slide 32.png" alt="Twitter Insights: User-Made Markups">
+  <img src="../images/work/ioda/Slide 39.png" alt="Competitive Analysis: Google Report">
+  <img src="../images/work/ioda/Slide 22.png" alt="Overall Findings">
+</div>
+
+<h3>Research Findings: Internet Connectivity View &amp; Edit/Share Feature</h3>
+<div class="img-grid img-grid-2">
+  <img src="../images/work/ioda/internet connectivity - research takeaways.png" alt="Internet connectivity research takeaways">
+  <img src="../images/work/ioda/share feature - research takeaways.png" alt="Share feature research takeaways">
+</div>
+
+<h2 id="redesign">(Re)design</h2>
+<h3>Internet Connectivity View</h3>
+<div class="phase-row">
+<div class="phase-content">
+<p>In redesigning the Internet Connectivity view, I paid special attention to accessibility, as well as improving user interpretation of signals and identification of outages. The color selection began with semantic and brand association with signals that might be more familiar to users. For example, using a brand color to represent the Google signals, while veering away from colors that might be mistaken by users for alerts, such as red. From there, we ran color accessibility tests with a multitude of palettes, until we found a cool-tone color scheme that maintained visibility with every color blindness test.</p>
+<div class="img-grid img-grid-2">
+  <img src="../images/work/ioda/Current Colors.png" alt="Audit of the current signal colors against color blindness simulations">
+  <img src="../images/work/ioda/Possible Colors.png" alt="Alternate warm-toned palette, failing several color blindness tests">
+  <img src="../images/work/ioda/Selected Colors-1.png" alt="Full color iteration progression from warm to cool tones">
+  <img src="../images/work/ioda/Selected Colors-2.png" alt="Final cool-tone palette candidates, passing every color blindness test">
+</div>
+<p>The redesign of the actual graph involved research on graph types and legibility, as well as many iterations. A goal for the graph was for users to be able to spot where a potential outage may be occurring, once they have a baseline understanding of a signal&rsquo;s pattern.</p>
+<div class="img-grid img-grid-2">
+  <img src="../images/work/ioda/Frame 113.png" alt="Early graph redesign iteration">
+  <img src="../images/work/ioda/Frame 116.png" alt="Graph iteration exploring deviation from 60-day average">
+</div>
+</div>
+<aside class="resource-rail">
+  <a class="resource-card" href="https://ioda.inetintel.cc.gatech.edu/" target="_blank" rel="noopener">
+    <span class="resource-card-label">&#128279; Live Dashboard</span>
+    <span class="resource-card-title">ioda.inetintel.cc.gatech.edu</span>
+    <span class="resource-card-desc">See the redesigned Internet Connectivity view live, with real-time outage data.</span>
+    <span class="resource-card-link">Visit the dashboard &rarr;</span>
+  </a>
+</aside>
+</div>
+
+<h3>Resulting Design</h3>
+<p>For the resulting design of the Internet connectivity view, we implemented new signal colors and tooltips to improve users' ability to interpret the signals effectively. To address the need for historical averages, we incorporated this data into the redesigned chart, providing users with a benchmark for comparison. Additionally, we introduced alert bands to highlight abnormal signal behavior, enabling users to easily identify outage events and potential connectivity issues.</p>
+<div class="img-grid img-grid-3">
+  <img src="../images/work/ioda/internet connectivity - redesign 1.png" alt="Internet connectivity redesign 1">
+  <img src="../images/work/ioda/internet connectivity - redesign 4.png" alt="Internet connectivity redesign 4">
+  <img src="../images/work/ioda/internet connectivity - redesign 3.png" alt="Internet connectivity redesign 3">
+</div>
+
+<h3>Share and Edit Feature</h3>
+<p>Another key aspect of the design was the new share and edit feature. Users expressed the importance of easily sharing outage information with others. We implemented functionality that allowed users to share regional and network outages, facilitating better communication and collaboration among users experiencing connectivity issues.</p>
+<img src="../images/work/ioda/share feature - redesign 1.png" alt="Share feature redesign">
+
+<h2 id="user-testing-and-findings">User Testing and Findings</h2>
+<p>During the user testing, participants provided valuable feedback on the redesigned features. They favored the overlapping chart design for comparing signals, citing its improved readability and compact tooltip design. Users reported a significant improvement in their ability to identify outage events promptly, thanks to the redesigned chart and the inclusion of alert bands. They found the historical averages and tooltips to be helpful in understanding the data presented. Participants appreciated the sharing feature, as it empowered them to share outage information within their communities, fostering better communication and problem-solving.</p>
+<div class="img-grid img-grid-3">
+  <img src="../images/work/ioda/Section-8.png" alt="Section-8">
+  <img src="../images/work/ioda/Section-5.png" alt="Section-5">
+  <img src="../images/work/ioda/Section-6.png" alt="Section-6">
+  <img src="../images/work/ioda/Section-4.png" alt="Section-4">
+  <img src="../images/work/ioda/Section-7.png" alt="Section-7">
+  <img src="../images/work/ioda/Section-1.png" alt="Section-1">
+  <img src="../images/work/ioda/Section-2.png" alt="Section-2">
+  <img src="../images/work/ioda/Section.png" alt="Section">
+  <img src="../images/work/ioda/Section-3.png" alt="Section-3">
+</div>
+
+<h2 id="next-steps">Next Steps</h2>
+<p>Currently, the IODA team is focusing on implementing these design changes, conducting further user testing, and developing a series of offline procedure manuals for people experiencing an internet outage event. My specific focus will be on the development of the procedure manuals.</p>
+
+  </div>
+</div>
+
+</main>
+
+
+<div class="section-transition" style="background: linear-gradient(to bottom, var(--ink) 0px, var(--ink) 2px, var(--paper) 2px, var(--paper) 12px, var(--ink) 12px, var(--ink) 16px, var(--paper) 16px, var(--paper) 24px, var(--ink) 24px, var(--ink) 30px, var(--paper) 30px, var(--paper) 36px, var(--ink) 36px, var(--ink) 44px, var(--paper) 44px, var(--paper) 48px, var(--ink) 48px, var(--ink) 58px, var(--paper) 58px, var(--paper) 60px)" aria-hidden="true"></div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p>Rachel Baker-Ramos | UX Designer</p>
+    <a href="https://www.linkedin.com/in/rachel-baker-ramos/" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
