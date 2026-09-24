@@ -665,8 +665,9 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  padding-bottom: 1.1rem;
-  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 0.7rem;
+  /*padding-bottom: 1.1rem; #NOTE: old padding
+  border-bottom: 1px solid var(--hairline); #NOTE: old border */
 }
 .pub:last-child { border-bottom: none; padding-bottom: 0; }
 
