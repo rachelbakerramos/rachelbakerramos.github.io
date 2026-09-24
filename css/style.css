@@ -429,6 +429,13 @@ a {
   margin: 0;
 }
 
+.section h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3.5vw, 2.0rem);
+  margin: 0;
+}
+
 /* ============================================
    ABOUT
    ============================================ */
