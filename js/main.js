@@ -133,3 +133,24 @@ if (lightboxImgs.length) {
   });
 }
 
+const pubChips = document.querySelectorAll('.pub-filter-chip');
+const pubItems = document.querySelectorAll('.pub-list .pub');
+
+function applyPubFilter(mode) {
+  pubItems.forEach((li) => {
+    const show = mode === 'all' || li.hasAttribute('data-featured');
+    li.classList.toggle('is-filtered-out', !show);
+  });
+  pubChips.forEach((chip) => {
+    const active = chip.dataset.filter === mode;
+    chip.classList.toggle('is-active', active);
+    chip.setAttribute('aria-pressed', active);
+  });
+}
+
+if (pubChips.length) {
+  pubChips.forEach((chip) =>
+    chip.addEventListener('click', () => applyPubFilter(chip.dataset.filter))
+  );
+  applyPubFilter('featured'); // default view on load
+}
