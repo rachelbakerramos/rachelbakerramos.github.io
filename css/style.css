@@ -731,7 +731,7 @@ a {
 .pub-filter {
   display: flex;
   gap: 0.5rem;
-  margin: 0 0 1.5rem;
+  margin: 0 0 0 0.75rem;   /* small extra gap after the title */
 }
 .pub-filter-chip {
   font-family: var(--font-mono);
